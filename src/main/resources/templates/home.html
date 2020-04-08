@@ -1,0 +1,29 @@
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<link rel="stylesheet" type="text/css" href="/css/main-left.css"
+	th:href="@{/css/main-left.css}">
+</head>
+<body>
+	<header>
+		<div class="container-header">
+			<h1 th:text="#{header.title}"></h1>
+		</div>
+	</header>
+	<div class="container clearfix">
+		<div id="sidebar">
+			<div class="sidebar__inner">
+				<div th:replace="menu-left :: navbar"></div>
+			</div>
+		</div>
+		<div id="content">
+		HOME
+		</div>
+	</div>
+		<footer>
+				<div th:replace="footer"></div>
+	</footer>
+</body>
+</html>
+
+
